@@ -7,82 +7,64 @@
   <body>
     <style type="text/css">
       body {
-        color: #000000;
+        color: #FFFFFF;
         background-image: url("http://images.alphacoders.com/813/81303.jpg");
-        background-position: center;
+        background-repeat: no-repeat;
         font-family: Georgia, Tahoma, Times;
         text-indent: 10px;
         margin: 0px;}
+
       h1 {
         width: 800px;
         height: 50px;
         margin: 0px;}
-      article {
-        text-indent: 10px}
-      footer {
-        font-size: 65%;}
-      h2 {
-        text-indent: 10px;}
+
       </style>
 
       <header>
-        <h1>Kate Lucas</h1>
+        <h1>Kate's Guessing Game</h1>
       </header>
-
-      <article>
-        <h2>Favorite Ice Cream Flavors</h2>
-        <ul>
-          <li>Chocolate Peanut Butter</li>
-          <li>Cookies and Cream</li>
-          <li>Vanilla with toppings</li>
-        </ul>
-      </article>
-
-      <article>
-        <h2>Interests</h2>
-        <ul>
-          <li><strong>sharks!!!</strong></li>
-          <li>coding</li>
-          <li>sports</li>
-          <li>the outdoors</li>
-        </ul>
-      </article>
 
     <script>
       var userName = prompt('Hello, What\'s your name?');
-      alert('Hello ' + userName + '. Very nice to meet you!');
+      alert('Hello ' + userName + '. Very nice to meet you! Would you mind answering a few questions?');
       console.log('The userName is: ' + userName);
 
-      var countryBorn = prompt('Can you guess what country I was born in? I\'ll give you a hint. It has 7,000+ islands.');
-        if (countryBorn = 'Philippines') {
-          alert('Philippines is correct! You do know your geography.')
+      var countryBorn = prompt('Can you guess what country I was born in?') .toUpperCase();
+        if (countryBorn === 'PHILIPPINES') {
+          alert('PHILIPPINES is correct! You do know your geography.')
           console.log(userName + 'has correctly guessed the first question.');
-        } else if (countryBorn != 'Philippines') {
-          alert('Good guess but the country I was born in is the Philippines, not ' + countryBorn + '.')
+        } else if (countryBorn != 'PHILIPPINES') {
+          alert('Good guess but the country I was born in is the PHILIPPINES, not ' + countryBorn + '.')
           console.log(userName + 'has incorrectly guessed the first question.');
 
-      var guess = prompt("Another fact about me is that I love sharks. So here's some shark trivia. First, can you guess which shark species live in the Puget Sound? Choose one: great white shark, mako shark, sixgill shark or the black tip reef shark.");
+      var guess = prompt('Another fact about me is that I love sharks. Can you guess which shark species live in the Puget Sound? Choose one: great white shark, mako shark, sixgill shark or the black tip reef shark.');
 
         switch (guess) {
       			case 'great white shark':
-        			alert("Although some people have said they've seen a great white in the Puget Sound, it's not likely you will ever see one in your lifetime. The correct answer is sixgill shark.");
-      			break;
+        			alert('Although some people have said they\'ve seen a great white in the Puget Sound, it\'s not likely you will ever see one in your lifetime. The correct answer is sixgill shark.');
+              console.log(userName + ' guessed the incorrect shark.');
+            break;
 
     				case 'mako shark':
-        			alert("One of the fastest of all shark species, it is unfortunate to say that mako sharks are not local to our waters. The correct answer is sixgill shark.");
-      			break;
+        			alert('One of the fastest of all shark species, it is unfortunate to say that mako sharks are not local to our waters. The correct answer is sixgill shark.');
+              console.log(userName + ' guessed the incorrect shark.');
+            break;
 
       			case 'sixgill shark':
-        			alert("Ding ding ding! Correct! The sixgill shark is a resident of the Puget Sound. It is a bottom dweller which means they're like the underground hood rats where it will be a rarity to observe them swimming at sea level.");
-      			break;
+        			alert('YES! Correct! The sixgill shark is a resident of the Puget Sound. It is a bottom dweller which means they\'re like the underground hood rats where it will be a rarity to observe them swimming at sea level.');
+              console.log(userName + ' guessed the correct shark.');
+            break;
 
     				case 'black tip reef shark':
-        			alert("I wish our waters were warm enough for the black tip reef sharks. These sharks are only common in tropical waters. The correct answer is sixgill shark.");
-      			break;
+        			alert('I wish our waters were warm enough for the black tip reef sharks. These sharks are only common in tropical waters. The correct answer is sixgill shark.');
+              console.log(userName + ' guessed the incorrect shark.');
+            break;
 
     				default:
-        			alert("I've never heard of that shark before. The correct answer is sixgill shark.");
-      			}
+        			alert('I\'ve never heard of that shark before. The correct answer is sixgill shark.');
+              console.log(userName + ' guessed the incorrect shark.');
+            }
       }
     </script>
   </body>
