@@ -26,10 +26,13 @@
       </header>
 
     <script>
+
+      //Question #1 - Asks for user's name
       var userName = prompt('Hello, What\'s your name?');
       alert('Hello ' + userName + '. Very nice to meet you! Would you mind answering a few questions?');
       console.log('The userName is: ' + userName);
 
+      //Question #2 - Asks the user to guess which country I'm from
       var countryBorn = prompt('Can you guess what country I was born in?') .toUpperCase();
         if (countryBorn === 'PHILIPPINES') {
           alert('PHILIPPINES is correct! You do know your geography.')
@@ -39,6 +42,7 @@
           console.log(userName + 'has incorrectly guessed the first question.');
       }
 
+      //Question #3 - Asks the user to guess what type of shark lives in the Puget Sound by using a switch statement
       var guess = prompt('Another fact about me is that I love sharks. Can you guess which shark species live in the Puget Sound? Choose one: great white shark, mako shark, sixgill shark or the black tip reef shark.');
 
         switch (guess) {
