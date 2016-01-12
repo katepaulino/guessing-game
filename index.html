@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kate's Guessing Game</title>
+    <title>Kate's Guessing Games</title>
   </head>
   <body>
     <style type="text/css">
@@ -18,59 +18,11 @@
         width: 800px;
         height: 50px;
         margin: 0px;}
-
-      </style>
+    </style>
 
       <header>
         <h1>Kate's Guessing Game</h1>
       </header>
 
-    <script>
-
-      //Question #1 - Asks for user's name
-      var userName = prompt('Hello, What\'s your name?');
-      alert('Hello ' + userName + '. Very nice to meet you! Would you mind answering a few questions?');
-      console.log('The userName is: ' + userName);
-
-      //Question #2 - Asks the user to guess which country I'm from
-      var countryBorn = prompt('Can you guess what country I was born in?') .toUpperCase();
-        if (countryBorn === 'PHILIPPINES') {
-          alert('PHILIPPINES is correct! You do know your geography.')
-          console.log(userName + 'has correctly guessed the first question.');
-        } else if (countryBorn != 'PHILIPPINES') {
-          alert('Good guess but the country I was born in is the PHILIPPINES, not ' + countryBorn + '.')
-          console.log(userName + 'has incorrectly guessed the first question.');
-      }
-
-      //Question #3 - Asks the user to guess what type of shark lives in the Puget Sound by using a switch statement
-      var guess = prompt('Another fact about me is that I love sharks. Can you guess which shark species live in the Puget Sound? Choose one: great white shark, mako shark, sixgill shark or the black tip reef shark.');
-
-        switch (guess) {
-      			case 'great white shark':
-        			alert('Although some people have said they\'ve seen a great white in the Puget Sound, it\'s not likely you will ever see one in your lifetime. The correct answer is sixgill shark.');
-              console.log(userName + ' guessed the incorrect shark.');
-            break;
-
-    				case 'mako shark':
-        			alert('One of the fastest of all shark species, it is unfortunate to say that mako sharks are not local to our waters. The correct answer is sixgill shark.');
-              console.log(userName + ' guessed the incorrect shark.');
-            break;
-
-      			case 'sixgill shark':
-        			alert('YES! Correct! The sixgill shark is a resident of the Puget Sound. It is a bottom dweller which means they\'re like the underground hood rats where it will be a rarity to observe them swimming at sea level.');
-              console.log(userName + ' guessed the correct shark.');
-            break;
-
-    				case 'black tip reef shark':
-        			alert('I wish our waters were warm enough for the black tip reef sharks. These sharks are only common in tropical waters. The correct answer is sixgill shark.');
-              console.log(userName + ' guessed the incorrect shark.');
-            break;
-
-    				default:
-        			alert('I\'ve never heard of that shark before. The correct answer is sixgill shark.');
-              console.log(userName + ' guessed the incorrect shark.');
-        }
-
-    </script>
-  </body>
+      <script src="app.js"></script>
 </html>
