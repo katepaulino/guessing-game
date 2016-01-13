@@ -5,7 +5,7 @@ var numCorrect = 0;
 var userName = prompt('Hello, What\'s your name?');
 alert('Hello ' + userName + '. Very nice to meet you! Would you mind answering a few questions?');
 console.log('The userName is: ' + userName + ' . Completed first question.');
-numCorrect++;
+numCorrect++; //One point for participation :)
 
 //Question #2 - Asks the user to guess which country I'm from.
 var countryBorn = prompt('Can you guess what country I was born in?') .toUpperCase();
