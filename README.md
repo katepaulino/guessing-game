@@ -9,8 +9,7 @@ Code Fellows Code 201 Week 1 Guessing Game
   - Asks the user to guess what type of shark lives in the Puget Sound
   - Asks the user to guess how many siblings I have
   - At the end of the questionnaire, counts how many questions the user answered correctly.
-
-## Game uses a function and posts responses to the HTML
+  - Game uses a function and posts responses to the HTML
 
 ## User Story
  - As a developer, I want to work on my guessing game assignment so that it is interactively fun.
