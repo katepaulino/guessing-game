@@ -1,7 +1,7 @@
 # Kate's Guessing Game
 Code Fellows Code 201 Week 1 Guessing Game
 *created by [Kate Lucas](https://github.com/katepaulino/guessing-game.git)
-* Paired Programmed by Sam Nortz
+* Paired Programmed by [Sam Nortz] (https://github.com/Tuesday-Last/game-guessing.git)
 
 ## Details of the Game
   - Asks for user's name
