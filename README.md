@@ -9,6 +9,7 @@ Code Fellows Code 201 Weeks 1-2 Guessing Game
   - Asks the user to guess which country I'm from
   - Asks the user to guess what type of shark lives in the Puget Sound
   - Asks the user to guess how many siblings I have
+  - Asks the user to guess my number
   - At the end of the questionnaire, counts how many questions the user answered correctly
   - Game uses a function and posts responses to the HTML
 
