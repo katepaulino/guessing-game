@@ -17,17 +17,15 @@ var els = [ans1, ans2, ans3, ans4];
 //Game function should take from questions array compares user answers to answers array and posts to html
 function game(questions, answers, index) {
 var queary = prompt(questions).toUpperCase();
-
-if (queary === answers || parseInt(queary) === answers) {
-  els[index].textContent = queary + ' is correct';
-  console.log(queary + ' correct');
-  console.log(numCorrect++);
-} else {
-  console.log(queary + ' incorrect');
-  els[index].textContent = queary + ' is incorrect';
-
- }
-}
+  if (queary === answers || parseInt(queary) === answers) {
+    els[index].textContent = queary + ' is correct';
+    console.log(queary + ' correct');
+    console.log(numCorrect++);
+  } else {
+    console.log(queary + ' incorrect');
+    els[index].textContent = queary + ' is incorrect';
+    }
+  }
 
 for (var i = 0; i < questions.length; i++) {
   game(questions[i], answers[i], i);
