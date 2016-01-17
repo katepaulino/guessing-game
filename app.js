@@ -14,7 +14,7 @@ window.onload = function() {
   function game(questions, answers, index) {
   var queary = prompt(questions).toUpperCase();
 
-  if (queary === answers || queary === parseInt(answers)) {
+  if (queary === answers || parseInt(queary) === answers) {
     els[index].textContent = queary + ' is correct';
     console.log(queary + ' correct');
     console.log(numCorrect++);
