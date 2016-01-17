@@ -15,9 +15,9 @@ function game(questions, answers, index) {
   var queary = prompt(questions).toUpperCase();
 
   if (queary === answers || queary === parseInt(answers)) {
-    console.log(queary + ' correct');
     els[index].textContent = queary + ' is correct';
-    numCorrect++;
+    console.log(queary + ' correct');
+    console.log(numCorrect++);
   } else {
     console.log(queary + ' incorrect');
     els[index].textContent = queary + ' is incorrect';
@@ -25,7 +25,7 @@ function game(questions, answers, index) {
 }
 
 for (var i = 0; i < questions.length; i++) {
-  game(questions[i], answers[i], i);
+  window.setTimeout(game(questions[i], answers[i], i), 1000);
 }
 
-elCorrect.textContent = 'You got ' + numCorrect + ' out of 3!';
+elCorrect.textContent = 'You got ' + numCorrect + ' out of ' + answers.length + '!';
