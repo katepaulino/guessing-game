@@ -28,4 +28,4 @@ function game(questions, answers, index) {
 for (var i = 0; i < questions.length; i++) {
   game(questions[i], answers[i], i);
 }
-elCorrect.textContent = "You got " + numCorrect + " out of 3!" 
+elCorrect.textContent = "You got " + numCorrect + " out of 3!"
