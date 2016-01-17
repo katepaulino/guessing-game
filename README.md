@@ -13,7 +13,7 @@ Code Fellows Code 201 Week 1 Guessing Game
   - Game uses a function and posts responses to the HTML
 
 ## Style
-  - Added Google font, colors and images to guessing game
+  - Added font colors and images to guessing game
 
 ## User Story
  - As a developer, I want to work on my guessing game assignment so that it is interactively fun
