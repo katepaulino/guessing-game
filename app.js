@@ -7,6 +7,12 @@ var ans3 = document.getElementById('a3');
 var ans4 = document.getElementById('a4');
 var correctCount = document.getElementById('elCorrect');
 
+var img1 = document.getElementById('imgOne');
+var img2 = document.getElementById('imgTwo');
+var img3 = document.getElementById('imgThree');
+var img4 = document.getElementById('imgFour');
+var imgs = [img1, img2, img3, img4];
+
 var questions = ['Can you guess what country I was born in?',
                  'Another fact about me is that I love sharks. Can you guess which shark species live in the Puget Sound? Choose one: great white shark, mako shark, sixgill shark or the black tip reef shark.',
                  'Can you guess how many siblings I have?',
@@ -19,11 +25,15 @@ function game(questions, answers, index) {
 var queary = prompt(questions).toUpperCase();
   if (queary === answers || parseInt(queary) === answers) {
     els[index].textContent = queary + ' is correct';
+    imgs[index].src = [coconuttree2.png, shark2.png, siblings2.png, turtle.png]
+    els[index].className = 'correct';
     console.log(queary + ' correct');
     console.log(numCorrect++);
   } else {
     console.log(queary + ' incorrect');
     els[index].textContent = queary + ' is incorrect';
+    imgs[index].src = 'coconuttree2.png', 'shark2.png', 'siblings2.png', 'https://openclipart.org/image/2400px/svg_to_png/94633/turtle-thinking.png';
+    els[index].className = 'incorrect';
     }
   }
 

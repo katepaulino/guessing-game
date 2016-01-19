@@ -1,5 +1,5 @@
 # Kate's Guessing Game
-Code Fellows Code 201 Weeks 1-2 Guessing Game
+Code Fellows Code 201 Guessing Game
 * created by [Kate Lucas](https://github.com/katepaulino)
 * Paired Programmed by [Sam Nortz] (https://github.com/Tuesday-Last)
 * Paired Programmed by [Taylor Wirtz] (https://github.com/tlwirtz)

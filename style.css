@@ -8,6 +8,7 @@ h1 {
 }
 
 img {
+  content: ""
   width: 100px;
   height: 100px;
 }
@@ -17,6 +18,14 @@ img {
   color: #FFFFFF;
   width: 100px;
   padding: 5px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: gray;
 }
 
 footer {
