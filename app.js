@@ -12,6 +12,7 @@ var img2 = document.getElementById('imgTwo');
 var img3 = document.getElementById('imgThree');
 var img4 = document.getElementById('imgFour');
 var imgs = [img1, img2, img3, img4];
+var showPic = ['coconuttree2.png', 'shark2.png', 'siblings2.png', 'turtle2.png'];
 
 var questions = ['Can you guess what country I was born in?',
                  'Another fact about me is that I love sharks. Can you guess which shark species live in the Puget Sound? Choose one: great white shark, mako shark, sixgill shark or the black tip reef shark.',
@@ -21,18 +22,17 @@ var answers = ['PHILIPPINES', 'SIXGILL SHARK', 2, 8];
 var els = [ans1, ans2, ans3, ans4];
 
 //Game function should take from questions array compares user answers to answers array and posts to html
-function game(questions, answers, index) {
+function game(questions, answers, index, images) {
 var queary = prompt(questions).toUpperCase();
   if (queary === answers || parseInt(queary) === answers) {
     els[index].textContent = queary + ' is correct';
-    imgs[index].src = [coconuttree2.png, shark2.png, siblings2.png, turtle.png]
     els[index].className = 'correct';
+    showPic[images].innerHTML = // need help here. Does it even look like it's going to work?;
     console.log(queary + ' correct');
     console.log(numCorrect++);
   } else {
     console.log(queary + ' incorrect');
     els[index].textContent = queary + ' is incorrect';
-    imgs[index].src = 'coconuttree2.png', 'shark2.png', 'siblings2.png', 'https://openclipart.org/image/2400px/svg_to_png/94633/turtle-thinking.png';
     els[index].className = 'incorrect';
     }
   }
