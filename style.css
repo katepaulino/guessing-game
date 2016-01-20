@@ -1,38 +1,31 @@
 body {
   font-family: Montserrat, Verdana, sans-serif;
 }
-
 h1 {
   color: DarkCyan;
   text-align: center;
 }
-
 img {
   content: ""
   width: 100px;
   height: 100px;
 }
-
 .box {
   background-color: #33CCFF;
   color: #FFFFFF;
   width: 100px;
   padding: 5px;
 }
-
 .correct {
   color: green;
 }
-
 .incorrect {
   color: gray;
 }
-
 footer {
   display: block;
   margin-top: 100px;
 }
-
 span {
   color: #333333;
 }
